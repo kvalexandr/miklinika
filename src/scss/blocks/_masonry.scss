@@ -1,0 +1,42 @@
+.masonry-section {
+  padding: 40px 0;
+}
+
+.grid-item {
+  float: left;
+  width: 32.4%;
+  height: 240px;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: $smDesktopWidth - 1px) {
+    width: 48%;
+  }
+
+  @media screen and (max-width: $smTableWidth - 1px) {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.grid-item--height2 { 
+  height: 344px; 
+
+  @media screen and (max-width: $smTableWidth - 1px) {
+    height: 400px;
+  }
+}
+
+.grid-item--height3 { 
+  height: 600px; 
+
+  @media screen and (max-width: $smDesktopWidth - 1px) {
+    height: 704px; 
+  }
+
+  @media screen and (max-width: $smTableWidth - 1px) {
+    height: 400px;
+  }
+}

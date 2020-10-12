@@ -1,0 +1,32 @@
+.metro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .metro-name {
+    margin-right: 8px;
+    position: relative;
+    padding-left: 12px;
+
+    &::before {
+      content: '';
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 50%;
+      margin-top: -4px;
+    }
+
+    &.metro--blue::before {
+      background: #2F80ED;
+    }
+
+    &.metro--green::before {
+      background: #27AE60;
+    }
+
+  }
+}

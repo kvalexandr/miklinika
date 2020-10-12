@@ -1,0 +1,78 @@
+.foto__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.foto__item {
+  height: 475px;
+  width: calc(60% - 40px);
+  margin-bottom: 40px;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  cursor: pointer;
+  position: relative;
+
+  @media screen and (max-width: $smDesktopWidth - 1px) {
+    height: 370px;
+  }
+
+  @media screen and (max-width: $tableWidth - 1px) {
+    height: 320px;
+    width: calc(60% - 20px);
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: $smTableWidth - 1px) {
+    height: 300px;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &--odd {
+    width: calc(40% - 40px);
+
+    @media screen and (max-width: $tableWidth - 1px) {
+      width: calc(40% - 20px);
+    }
+
+    @media screen and (max-width: $smTableWidth - 1px) {
+      width: 100%;
+    }
+  }
+
+  div {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+  
+    &::before {
+      content: '';
+      background: url('/img/svg/zoom.svg') center center no-repeat rgba(0, 0, 0, .6);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      border: 2px solid #fff;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 32px;
+    }
+  }
+}

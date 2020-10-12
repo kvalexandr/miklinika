@@ -1,0 +1,24 @@
+.directions {
+  padding: 72px 0 80px;
+
+  h2 {
+    margin-bottom: 32px;
+  }
+}
+
+.direction-btn-text {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap;
+
+  .btn {
+    margin-right: 20px;
+    margin-top: 20px;
+
+    @media screen and (max-width: $tableWidth - 1px) {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+  }
+}

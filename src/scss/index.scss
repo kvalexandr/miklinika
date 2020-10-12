@@ -1,0 +1,53 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/libs";
+
+@import "utils/reset";
+@import "utils/_base";
+@import "utils/_bg";
+@import "utils/_btn";
+@import "utils/fancybox";
+@import "utils/datepicker";
+
+@import "blocks/header";
+@import "blocks/record-footer";
+@import "blocks/footer";
+@import "blocks/seo";
+@import "blocks/404";
+@import "blocks/top";
+@import "blocks/breadcrumbs";
+@import "blocks/list-column";
+@import "blocks/inner-nav";
+@import "blocks/content";
+@import "blocks/services-direction";
+@import "blocks/diseases-direction";
+@import "blocks/prices";
+@import "blocks/reviews";
+@import "blocks/directions";
+@import "blocks/doctors";
+@import "blocks/advantages";
+@import "blocks/metro";
+@import "blocks/pages";
+@import "blocks/filter";
+@import "blocks/slick";
+@import "blocks/modal";
+@import "blocks/forms";
+@import "blocks/promo-slider";
+@import "blocks/masonry";
+
+@import "pages/main_banner";
+@import "pages/doctor_description";
+@import "pages/reviews_list";
+@import "pages/eq";
+@import "pages/news";
+@import "pages/promo";
+@import "pages/about";
+@import "pages/works";
+@import "pages/contacts";
+@import "pages/foto";
+@import "pages/main";
+@import "pages/licenses";
+@import "pages/diseases";
+@import "pages/search";
+@import "pages/nalog";
+

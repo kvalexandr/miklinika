@@ -1,0 +1,32 @@
+.record-footer {
+
+  padding: 80px 0;
+  background: linear-gradient(109.53deg, #00AC69 15.91%, #118F8B 99.42%);
+  color: #fff;
+
+  .container {
+    padding-left: 168px;
+
+    @media screen and (max-width: $smDesktopWidth) {
+      padding-left: 40px;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+      padding-left: 24px;
+    }
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 1.2;
+
+    @media screen and (max-width: $tableWidth) {
+      font-size: 32px;
+    }
+  }
+
+  .subtitle {
+    margin-top: 16px;
+  }
+
+}

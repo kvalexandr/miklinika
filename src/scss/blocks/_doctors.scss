@@ -1,0 +1,251 @@
+.doctors {
+  padding: 80px 0;
+}
+
+.doctors__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+
+  @media screen and (max-width: $smTableWidth) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.doctors__top-button .btn {
+  width: 317px;
+  background: linear-gradient(122.12deg, #00AC69 15.91%, #118F8B 99.42%);
+
+  @media screen and (max-width: $smTableWidth) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    width: 250px;
+  }
+}
+
+.doctors__block {
+  width: calc(100% + 24px);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 37px;
+
+  @media screen and (max-width: $phoneWidth) {
+    flex-wrap: nowrap;
+  }
+}
+
+.doctor-card {
+  width: calc(25% - 24px);
+  background-color: #fff;
+  margin-right: 24px;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media screen and (max-width: $smDesktopWidth - 1px) {
+    width: calc(33.3% - 24px);
+  }
+
+  @media screen and (max-width: $tableWidth - 1px) {
+    width: calc(50% - 24px);
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    width: calc(100% - 24px);
+    min-width: 322px;
+  }
+
+  .score {
+    margin-right: 40px;
+  }
+
+  .add-to-like {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .add-to-like i,
+  .add-to-like span {
+    display: inline-block;
+    color: #EB5757;
+  }
+  .add-to-like span {
+    margin-right: 16px;
+    color: #333333;
+  }
+  .add-to-like .fa-heart {
+    display: none;
+  }
+  .add-to-like:hover .fa-heart {
+    display: inline-block;
+  }
+  .add-to-like:hover .fa-heart-o {
+    display: none;
+  }
+  .add-to-like:hover i,
+  .add-to-like:hover span {
+    color: #EB5757;
+  }
+  .add-to-like i {
+    font-size: 20px;
+  }
+  .add-to-like span {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .add-to-like.red i,
+  .add-to-like.red span {
+    color: #EB5757;
+  }
+  .add-to-like.red .fa-heart {
+    display: inline-block;
+  }
+  .add-to-like.red .fa-heart-o {
+    display: none;
+  }
+  .add-to-like .red:hover .fa-heart {
+    display: none;
+  }
+  .add-to-like .red:hover .fa-heart-o {
+    display: inline-block;
+  }
+
+}
+.doctor-card__img {
+  height: 390px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+}
+.doctor-card-body {
+  padding: 0 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 9px;
+}
+.doctor-card__name a {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.4;
+  color: $mainFontColor;
+
+  @media screen and (max-width: $tableWidth) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: $green-color;
+  }
+}
+.doctor-card__spec {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 8px;
+  max-height: 90px;
+  overflow: hidden;
+}
+.doctor-card__experience {
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 8px;
+  color: #333333;
+}
+.doctor-card__reviews {
+  font-weight: 500;
+  font-size: 14px;
+}
+.doctor-card-footer {
+  margin-top: 14px;
+}
+
+.doctor-card__estimation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.doctor-card__one {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  @media screen and (max-width: $smTableWidth - 1) {
+    flex-direction: column;
+  }
+
+  .doctor-card-body {
+    justify-content: center;
+    max-width: 525px;
+    padding-left: 40px;
+
+    @media screen and (max-width: $smTableWidth - 1) {
+      padding-left: 16px;
+    }
+  }
+
+  .doctor-card-footer {
+    margin-top: 40px;
+  }
+
+  .doctor-card__estimation {
+    justify-content: flex-start;
+  }
+}
+
+.doctor-card-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 322px;
+
+  @media screen and (max-width: $phoneWidth - 1) {
+    max-width: 100%;
+  }
+
+  .doctor-card__img {
+    min-width: 322px;
+
+    @media screen and (max-width: $phoneWidth - 1) {
+      min-width: 100%;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  .btn-doctor-big {
+    @media screen and (max-width: $smTableWidth - 1) {
+      display: none;
+    }
+  }
+}
+
+.btn-doctor-small {
+  display: none;
+
+  @media screen and (max-width: $smTableWidth - 1) {
+    display: block;
+    margin-top: 40px;
+  }
+}

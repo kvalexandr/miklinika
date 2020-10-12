@@ -1,0 +1,250 @@
+.doctor-top {
+  padding: 40px 0 40px;
+}
+
+.doctor-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media screen and (max-width: $smTableWidth - 1px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__photo {
+    max-width: 478px;
+    margin-right: 40px;
+
+    @media screen and (max-width: $tableWidth - 1px) {
+      max-width: 350px;
+    }
+
+    @media screen and (max-width: $smTableWidth - 1px) {
+      order: 2;
+      margin-top: 30px;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    max-width: 600px;
+
+    @media screen and (max-width: $smTableWidth - 1px) {
+      order: 1;
+    }
+
+    .description-prof {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+
+      @media screen and (max-width: $smDesktopWidth - 1px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: $tableWidth - 1px) {
+        font-size: 12px;
+      }
+    }
+
+    .description-anons {
+      margin: 16px 0 24px;
+
+      @media screen and (max-width: $smDesktopWidth - 1px) {
+        font-size: 14px;
+      }
+    }
+
+    .add-to-like {
+      background: transparent;
+      border: none;
+      outline: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .add-to-like i,
+    .add-to-like span {
+      display: inline-block;
+      color: #EB5757;
+    }
+    .add-to-like span {
+      margin-left: 8px;
+      color: #333333;
+    }
+    .add-to-like .fa-heart {
+      display: none;
+    }
+    .add-to-like:hover .fa-heart {
+      display: inline-block;
+    }
+    .add-to-like:hover .fa-heart-o {
+      display: none;
+    }
+    .add-to-like:hover i,
+    .add-to-like:hover span {
+      color: #EB5757;
+    }
+    .add-to-like i {
+      font-size: 20px;
+    }
+    .add-to-like span {
+      font-weight: 500;
+      font-size: 18px;
+
+      @media screen and (max-width: $smDesktopWidth - 1px) {
+        font-size: 14px;
+      }
+    }
+    .add-to-like.red i,
+    .add-to-like.red span {
+      color: #EB5757;
+    }
+    .add-to-like.red .fa-heart {
+      display: inline-block;
+    }
+    .add-to-like.red .fa-heart-o {
+      display: none;
+    }
+    .add-to-like .red:hover .fa-heart {
+      display: none;
+    }
+    .add-to-like .red:hover .fa-heart-o {
+      display: inline-block;
+    }
+
+    .like {
+
+      @media screen and (max-width: $smTableWidth - 1px) {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+    .doctor-evaluation {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 80px;
+
+      @media screen and (max-width: $smTableWidth - 1px) {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .doctor-reviews {
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: 40px;
+
+        @media screen and (max-width: $smDesktopWidth - 1px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .doctor-forms {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 40px;
+
+      @media screen and (max-width: $smDesktopWidth - 1px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: $phoneWidth - 1px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .btn-transparent {
+        color: $green-color;
+        border: 1px solid $green-color;
+        margin-left: 40px;
+
+        @media screen and (max-width: $tableWidth - 1px) {
+          margin-left: 20px;
+          padding: 12px 26px;
+        }
+
+        @media screen and (max-width: $phoneWidth - 1px) {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.4;
+    margin: 24px 0 16px;
+
+    @media screen and (max-width: $smDesktopWidth - 1px) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: $tableWidth - 1px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.doctor-estimation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.doctor-price {
+  margin-top: -35px;
+  padding-top: 115px;
+  padding-bottom: 105px;
+
+  @media screen and (max-width: $smDesktopWidth - 1px) {
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    background: linear-gradient(118.02deg, #00AC69 15.91%, #118F8B 99.42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $green-color;
+  }
+}
+
+.doctor-about {
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    background: linear-gradient(118.02deg, #00AC69 15.91%, #118F8B 99.42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $green-color;
+    margin-top: 40px;
+  }
+
+  &__block {
+    margin-bottom: 56px;
+  }
+}
+
+.doctor-reviews__section {
+  margin-top: 120px;
+}

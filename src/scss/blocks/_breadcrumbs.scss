@@ -1,0 +1,21 @@
+.breadcrumbs {
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+
+  li:not(:last-child)::after {
+    position: relative;
+    margin-right: 4px;
+    opacity: .7;
+    content: "/";
+  }
+
+  .current {
+    font-weight: 400;
+  }
+
+  a {
+    color: #333333;
+  }
+}

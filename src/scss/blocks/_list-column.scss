@@ -1,0 +1,121 @@
+.list-filter__nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list-filter__nav-item {
+  padding: 8px 32px;
+  border: 1px solid #F2F2F2;
+  font-weight: 400;
+  margin-right: 16px;
+  color: #333333;
+  cursor: pointer;
+  position: relative;
+
+  @media screen and (max-width: $smTableWidth) {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: $mdPhoneWidth) {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  &:hover, &.active {
+    background: linear-gradient(102.37deg, #00AC69 15.91%, #118F8B 99.42%);
+    color: #fff;
+    border: 1px solid #00AC69;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 1px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      bottom: 9px;
+      margin: 0 32px;
+    }
+
+  }
+
+}
+
+.list__items--four {
+  column-count: 4;
+  column-width: 25%;
+  column-gap: 82px;
+
+  @media screen and (max-width: $smDesktopWidth) {
+    column-count: 3;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+    column-count: 2;
+    column-width: 50%;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    column-count: 1;
+    column-width: 100%;
+  }
+}
+
+.list__items--three {
+  column-count: 3;
+  column-width: 33.33%;
+  column-gap: 132px;
+
+  @media screen and (max-width: $smDesktopWidth) {
+    column-gap: 100px;
+  }
+  
+  @media screen and (max-width: $tableWidth) {
+    column-count: 2;
+    column-width: 50%;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    column-count: 1;
+    column-width: 100%;
+  }
+}
+
+.list__items {
+  margin-top: 30px;
+  column-fill: initial;
+  column-rule: 1px solid rgba(0, 172, 105, .2);;
+}
+
+.list__item {
+  display: block;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.list__item-link {
+  display: block;
+  color: #333333;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 2px;
+  padding: 12px 0px;
+  line-height: 1.6;
+
+  &:hover {
+    background: $green-color;
+    color: #fff;
+    margin-left: -25px;
+    padding-left: 25px;
+    text-decoration: underline;
+  }
+ 
+  
+}
+
+.list__item.border-green {
+  border: 1px solid $green-color;
+}

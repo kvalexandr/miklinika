@@ -1,0 +1,210 @@
+.banner {
+  position: relative;
+}
+
+.banner__slider {
+  min-height: 100%;
+  position: relative;
+
+  &-item {
+    background-size: cover !important;
+    height: 600px;
+    // background: url('/img/main_header.jpg') center center no-repeat;
+
+    @media screen and (max-width: $phoneWidth - 1px) {
+      max-height: 531px;
+    }
+  }
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 103px;
+    min-height: 378px;
+
+    @media screen and (max-width: $smTableWidth - 1px) {
+      margin-top: 47px;
+    }
+
+    @media screen and (max-width: $phoneWidth - 1px) {
+      margin-top: 37px;
+    }
+
+    @media screen and (max-width: $smPhoneWidth) {
+      margin-top: 27px;
+    }
+  }
+
+  &-text {
+    background: rgba(255, 255, 255, 0.9);
+    width: 767px;
+    padding: 48px 40px;
+    position: relative;
+
+    @media screen and (max-width: $mdPhoneWidth - 1px) {
+      padding: 30px 20px 40px;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 36px;
+      padding-bottom: 16px;
+      line-height: 1.2;
+
+      @media screen and (max-width: $smTableWidth - 1px) {
+        font-size: 28px;
+      }
+
+      @media screen and (max-width: $phoneWidth - 1px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 460px) {
+        font-size: 18px;
+      }
+    }
+    
+    .text {
+      max-width: 620px;
+      color: #333333;
+
+      @media screen and (max-width: $smTableWidth - 1px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 460px) {
+        font-size: 12px;
+      }
+    }
+    
+    .btn {
+      width: 209px;
+      position: absolute;
+      left: 40px;
+      bottom: -25px;
+
+      @media screen and (max-width: $phoneWidth - 1px) {
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .prev-banner, .next-banner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    bottom: -25px;
+    cursor: pointer;
+
+    @media screen and (max-width: $phoneWidth - 1px) {
+      display: none;
+    }
+
+    &:hover {
+      background: $green-color;
+
+      span {
+        background: url("/img/svg/arrow_slide_white.svg") center center no-repeat;
+      }
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .prev-banner {
+    right: 102px;
+
+    span {
+      background: url("/img/svg/arrow_slide.svg") center center no-repeat;
+    }
+  }
+
+  .next-banner {
+    right: 40px;
+
+    span {
+      background: url("/img/svg/arrow_slide.svg") center center no-repeat;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.banner__form {
+  background: rgba(255, 255, 255, 0.9);
+  width: 375px;
+  padding: 48px 35px 30px;
+  z-index: 1;
+  @media screen and (max-width: $smDesktopWidth - 1px) {
+    display: none;
+  }
+
+  .policy {
+    color: #5C554A;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+
+
+.banner {
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #00AC69;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      background: #fff;
+  
+      span {
+        background: url("/img/svg/arrow_slide.svg") center center no-repeat;
+      }
+    }
+  
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .prev {
+    left: 0;
+
+    span {
+      background: url("/img/svg/arrow_slide_white.svg") center center no-repeat;
+    }
+  }
+
+  .next {
+    right: 0;
+    left: auto;
+
+    span {
+      background: url("/img/svg/arrow_slide_white.svg") center center no-repeat;
+      transform: rotate(180deg);
+    }
+  }
+
+  
+}

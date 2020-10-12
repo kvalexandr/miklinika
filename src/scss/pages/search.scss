@@ -1,0 +1,25 @@
+.search-page form {
+  display: flex;
+  max-width: 700px;
+}
+.search-page input {
+  width: 100%;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #00AC69;
+  max-width: 500px;
+}
+.search-page .btn {
+  max-width: 200px;
+}
+
+.search-page a {
+  color: #00AC69;
+}
+
+.search-page hr {
+  border: 1px solid #00AC69;
+  margin: 40px 0;
+}

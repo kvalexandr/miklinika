@@ -1,0 +1,17 @@
+.modal-body {
+  padding: 40px;
+
+  @media screen and (max-width: $phoneWidth - 1px) {
+    padding: 20px;
+  }
+}
+
+button.close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+}
